@@ -14,10 +14,10 @@ export default function Hero() {
                         I'm a Junior Developer graduating from Clemson University
                     </h2>
                     <div className='flex items-center gap-x-3 sm:text-sm'>
-                        <a href="mailto:jtcfred@gmail.com" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
+                        <a href="mailto:jtcfred@gmail.com" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-jackson-100 hover:scale-105 active:bg-gray-900 rounded-full md:inline-flex">
                             Contact Me
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1FGS2HErf0_PlSOhr7DpB5piCdOxU1b7pDmy_C4T3NaE/edit?usp=sharing" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
+                        <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1FGS2HErf0_PlSOhr7DpB5piCdOxU1b7pDmy_C4T3NaE/edit?usp=sharing" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-jackson-100 hover:scale-105 active:bg-gray-900 rounded-full md:inline-flex">
                             Download Resume
                         </a>
                     </div>
