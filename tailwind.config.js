@@ -15,9 +15,9 @@ module.exports = {
       colors: {
         jackson: {
           100: '#FFD166',
-          200: '#35CE8D',
+          200: '#87BFFF',
           300: '#26547C',
-          400: '#EF476F',
+          400: '#ADD7F6',
         }
       },
     },

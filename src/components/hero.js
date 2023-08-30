@@ -5,12 +5,12 @@ export default function Hero() {
     
     return (
         <section>
-            <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
+            <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-jackson-200 overflow-hidden md:px-8 md:flex">
                 <div className='flex-none space-y-5 max-w-xl'>
-                    <h1 className="text-4xl text-gray-800 font-medium sm:text-5xl">
-                        Hi, I'm <span className="font-extrabold">Jackson Cozzi</span>
+                    <h1 className="text-4xl xl:text-7xl text-jackson-200 font-medium sm:text-5xl">
+                        Hi, I'm <span className="block font-extrabold xl:text-9xl text-jackson-100 mb-10">Jackson Cozzi</span>
                     </h1>
-                    <h2 className="text-2xl text-gra-800">
+                    <h2 className="text-2xl xl:text-4xl text-gra-800">
                         I'm a Junior Developer graduating from Clemson University
                     </h2>
                     <div className='flex items-center gap-x-3 sm:text-sm'>
