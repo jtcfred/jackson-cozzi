@@ -49,27 +49,25 @@ export default function Projects() {
 
   return (
     <main>
-      <div className="flex flex-col py-4 mx-20">
-        <div className="py-4">
-          <div className="py-8">
-            <div className="my-5 text-7xl text-jackson-100 font-bold">Projects</div>
-            <div className="text-2xl text-jackson-200">Listed below are both personal and work projects (ones that I am allowed to disclose)</div>
-          </div>
+      <div className="flex flex-col md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl 3xl:max-w-[2000px] p-10 xl:p-28 mx-auto">
+        <div className="pb-8">
+          <div className="mb-5 text-7xl text-jackson-100 font-bold">Projects</div>
+          <div className="text-2xl text-jackson-200">Listed below are both personal and work projects (ones that I am allowed to disclose)</div>
         </div>
         {/* This is the beginning of the flex */}
-        <div className="flex flex-col flex-wrap px-20 md:px-10 md:flex-row justify-evenly gap-6">
+        <div className="flex flex-col flex-wrap px-20 md:flex-row gap-4 xl:gap-10 justify-center">
           {/* This is the beginning of the card */}
           {CardInformation.map((card) => (
-            <div className="h-full max-w-lg">
-              <Image
-                src={card.picture}
-                width={500}
-                height={500}
-                alt={card.alt}
-                className="rounded-t-xl"
-              />
-              {/* <img src={card.picture} className="rounded-t-xl" /> */}
-              <div className="px-9 pt-10 pb-14 bg-jackson-200 rounded-b-lg">
+            <div key={card.title} className="md:max-w-sm lg:max-w-md xl:max-w-lg xl:h-[861px]">
+              <div className="w-full h-3/5 relative">
+                <Image
+                  src={card.picture}
+                  fill={true}
+                  alt={card.alt}
+                  className="rounded-t-xl"
+                />
+              </div>
+              <div className="flex flex-col justify-between px-9 pt-10 pb-14 bg-jackson-200 rounded-b-lg h-2/5">
                 <div className="text-black space-y-4">
                   <h3 className="text-xl font-bold lead-xl">{card.title}</h3>
                   <div className="text-lg">{card.subtitle}</div>
@@ -78,7 +76,7 @@ export default function Projects() {
                   {/* This is the technology list */}
                   <ul className="flex flex-col gap-y-2.5">
                     {card.technologies.map((tech) => (
-                      <li className="flex space-x-3 text-white" key={tech.label}>
+                      <li className="flex space-x-3 text-black" key={tech.label}>
                         <Image width="50" height="50" src={tech.icon} className="w-6 h-6" />
                         <span className="paragraph-l font-bold">{tech.label}</span>
                       </li>

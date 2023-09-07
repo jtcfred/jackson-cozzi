@@ -20,6 +20,9 @@ module.exports = {
           400: '#ADD7F6',
         }
       },
+      screens: {
+        '3xl': '1800px',
+      },
     },
     fontFamily: [
       
