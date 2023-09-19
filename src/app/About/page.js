@@ -24,12 +24,11 @@ export default function About() {
             <div class="-mx-4 flex flex-wrap">
               {/* First Entry */}
               <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div class="mx-auto mb-10 max-w-[370px]">
-                  <div class="mb-8 overflow-hidden rounded">
+                <div class="mx-auto mb-10 lg:max-w-[400px] bg-jackson-100 rounded-xl">
+                  <div class="mb-8 overflow-hidden rounded-t-xl">
                     <Image
                       src={Kayak}
                       alt="image"
-                      className="rounded-full"
                     />
                   </div>
                   <div>
