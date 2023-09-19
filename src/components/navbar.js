@@ -7,7 +7,6 @@ export default function Navbar() {
     { label: 'Home', href: '/' },
     { label: 'About', href: '/About' },
     { label: 'Projects', href: '/Projects' },
-    { label: 'Skills', href: '/Skills' },
   ];
 
   return (

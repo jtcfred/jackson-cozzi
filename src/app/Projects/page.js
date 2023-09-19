@@ -2,6 +2,9 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 
 import Mike from 'public/images/mike.jpg'
+import Story from 'public/studentStory.gif'
+import Birthday from 'public/images/jordanBirthday.png'
+
 import NextSVG from 'public/images/svg/nextjs.svg'
 import CSSSVG from 'public/images/svg/css.svg'
 import javascriptSVG from 'public/images/svg/javascript.svg'
@@ -14,7 +17,7 @@ export default function Projects() {
     {
       title: 'Jordan\'s Birthday Website',
       subtitle: 'I created a website to celebrate my girlfriend\'s birthday! Friends could add birthday wishes, play a quiz, and add songs to a birthday playlist',
-      picture: Mike,
+      picture: Birthday,
       alt: '',
       technologies: [
         { label: 'NextJS', icon: NextSVG },
@@ -26,7 +29,7 @@ export default function Projects() {
     {
       title: 'UPIC Student Story',
       subtitle: 'I created a webpage to highlight the Clemson Friday Morning Swim Club in collaboration with some Clemson designers',
-      picture: Mike,
+      picture: Story,
       alt: '',
       technologies: [
         { label: 'Javascript', icon: javascriptSVG },
