@@ -6,6 +6,28 @@ import Girlfriend from 'public/images/girlfriendPlaceholder.webp'
 import Hiking from 'public/images/hikingPlaceholder.png'
 export default function About() {
 
+  const entries = [
+    {
+      title: 'Kayaking',
+      imageSrc: Kayak,
+      altText: 'Person kayaking on a river'
+    },
+    {
+      title: 'Video Games',
+      imageSrc: Factorio,
+      altText: 'Gaming setup with a computer and controller'
+    },
+    {
+      title: 'Bothering My Girlfriend',
+      imageSrc: Girlfriend,
+      altText: 'Smiling couple spending time together'
+    },
+    {
+      title: 'Hiking',
+      imageSrc: Hiking,
+      altText: 'Scenic view of a hiking trail'
+    }
+  ];
 
 
   return (
@@ -21,79 +43,33 @@ export default function About() {
         <section className="pb-10 lg:pb-20">
           <div className="container mx-auto">
             {/* flex for entries */}
-            <div class="-mx-4 flex flex-wrap">
-              {/* First Entry */}
-              <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div class="mx-auto mb-10 lg:max-w-[400px] bg-jackson-100 rounded-xl">
-                  <div class="mb-8 overflow-hidden rounded-t-xl">
-                    <Image
-                      src={Kayak}
-                      alt="image"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
-                      Kayakking
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              {/* End of Entry */}
-              {/* First Entry */}
-              <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div class="mx-auto mb-10 max-w-[370px]">
-                  <div class="mb-8 overflow-hidden rounded">
-                    <Image
-                      src={Factorio}
-                      alt="image"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
-                      Video Games
-                    </h3>
+            <div className="flex flex-wrap">
+              {entries.map((entry) => (
+                <div key={entry} className="w-full px-4 md:w-1/2 lg:w-1/3 mb-10 hover:scale-110 duration-200 hover:-translate-y-4">
+                  <div className="mx-auto lg:max-w-[400px] rounded-xl min-h-[250px]">
+                    <div className="relative overflow-hidden rounded-t-xl h-[200px] w-full">
+                      <Image
+                        src={entry.imageSrc}
+                        fill={true}
+                        alt={entry.altText}
+                      />
+                    </div>
+                    <div className="flex justify-center content-center bg-jackson-100 h-[80px] rounded-b-xl w-full">
+                      <div className="w-1/2 flex content-center justify-center bg-jackson-400 p-1 my-auto mx-auto rounded-full">
+                        <h3 className="text-center text-dark hover:text-primary inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
+                          {entry.title}
+                        </h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* End of Entry */}
-              {/* First Entry */}
-              <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div class="mx-auto mb-10 max-w-[370px]">
-                  <div class="mb-8 overflow-hidden rounded">
-                    <Image
-                      src={Girlfriend}
-                      alt="image"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
-                      Bothering My Girlfriend
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              {/* End of Entry */}
-              {/* First Entry */}
-              <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div class="mx-auto mb-10 max-w-[370px]">
-                  <div class="mb-8 overflow-hidden rounded">
-                    <Image
-                      src={Hiking}
-                      alt="image"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
-                      Hiking
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              {/* End of Entry */}
+              ))}
             </div>
           </div>
         </section>
       </div>
     </main>
+
+
   )
 }
